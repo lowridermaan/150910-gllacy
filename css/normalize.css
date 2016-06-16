@@ -418,3 +418,6 @@ textarea {
   -webkit-appearance: button; /* 1 */
   font: inherit; /* 2 */
 }
+body{
+  background: url(../img/wafer-ptrn.jpg);
+}
