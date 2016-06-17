@@ -5,64 +5,64 @@
     <title>HTML Academy: Глейси</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&subset=cyrillic" rel="stylesheet">
   </head>
   <body>
+    <div class="wrapper">
     <!-- Начало хедера -->
     <header class="header">
-      <nav class="header-navigation">
-        <ul class="header-navigation-menu">
-          <li class="logo"><a href="#" class="logo-link"><img src="" class="logo-image" alt="gllacy-logo"></a>
-          </li>
-          <li><a href="#" class="navigation-menu-item">Каталог</a>
-            <div class="submenu-box">
-              <ul class="submenu-inner">
-                <li><p class="submenu-title">Новинки</p>
-                </li>
-                <li><a href="#">Сливочное</a>
-                </li>
-                <li><a href="#">Щербеты</a>
-                </li>
-                <li><a href="#">Фруктовый лед</a>
-                </li>
-                <li><a href="#">Мелорин</a>
-                </li>
-              </ul>
+      <ul class="header-navigation-menu">
+        <li class="logo"><a href="#" class="logo-link"><img src="img/logo.svg" width="154" height="64" class="logo-image" alt="gllacy-logo"></a>
+        </li>
+        <li><a href="#" class="navigation-menu-item"><span class="text-dec">Каталог</span></a>
+          <div class="submenu-box">
+            <ul class="submenu-inner">
+              <li><p class="submenu-title">Новинки</p>
+              </li>
+              <li><a href="#">Сливочное</a>
+              </li>
+              <li><a href="#">Щербеты</a>
+              </li>
+              <li><a href="#">Фруктовый лед</a>
+              </li>
+              <li><a href="#">Мелорин</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#" class="navigation-menu-item"><span class="text-dec">Доставка и оплата</span></a>
+        </li>
+        <li><a href="#" class="navigation-menu-item"><span class="text-dec">О Компании</span></a>
+        </li>
+      </ul>
+      <ul class="header-user-box">
+        <li><button class="user-box-search user-box-btn"></button>
+          <form action="#" method="get" class="search-hover">
+            <input type="text" name="search" id="search" placeholder="Что ищем?">
+          </form>
+        </li>
+        <li><button class="user-box-login user-box-btn"><span class="icon icon-entr">Вход</span></button>
+          <form action="#" method="get" class="login-hover">
+            <input type="text" name="name" id="name" placeholder="Электронная почта">
+            <input type="password" name="password" id="password" placeholder="Пароль">
+            <input type="submit" value="Войти">
+            <div class="login-hover-recovery">
+              <a href="#">Забыли пароль?</a>
+              <a href="#">Новая регистрация</a>
             </div>
-          </li>
-          <li><a href="#" class="navigation-menu-item">Доставка и оплата</a>
-          </li>
-          <li><a href="#" class="navigation-menu-item">О<span>Компании</span></a>
-          </li>
-        </ul>
-        <ul class="header-user-box">
-          <li><button class="user-box-search user-box-btn"></button>
-            <form action="#" method="get" class="search-hover">
-              <input type="text" name="search" id="search" placeholder="Что ищем?">
-            </form>
-          </li>
-          <li><button class="user-box-login user-box-btn">Вход</button>
-            <form action="#" method="get" class="login-hover">
-              <input type="text" name="name" id="name" placeholder="Электронная почта">
-              <input type="password" name="password" id="password" placeholder="Пароль">
-              <input type="submit" value="Войти">
-              <div class="login-hover-recovery">
-                <a href="#">Забыли пароль?</a>
-                <a href="#">Новая регистрация</a>
-              </div>
-            </form>
-          </li>
-          <li><a href="#" class="user-box-bascket user-box-btn">Корзина</a>
-          </li>
-        </ul>
-        <div class="header-info-box">  <!-- Спозиционировать абсолютно!-->
-          <p class="info-box-worktime"></p>
-          <p class="info-box-phoneNumber"></p>
-        </div>
-      </nav>
+          </form>
+        </li>
+        <li><button class="user-box-bascket user-box-btn"><span class="icon icon-cart">Пусто</span></button>
+        </li>
+      </ul>
+      <div class="header-info-box">  <!-- Спозиционировать абсолютно!-->
+        <p class="info-box-worktime"></p>
+        <p class="info-box-phoneNumber"></p>
+      </div>
     </header>
     <!-- Конец хедера -->
     <!-- Начало контентной части -->
-    <main class="wrapper">
+    <main class="main-content">
       <!-- Начало слайдера -->
       <div class="slider-box">
       </div>
@@ -137,6 +137,7 @@
     <div class="footer-for-customers"></div>
     <div class="footer-copyright"></div>
     </footer>
+    </div>
     <!-- Конец футера -->
   </body>
 </html>

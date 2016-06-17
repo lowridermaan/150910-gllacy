@@ -1,0 +1,136 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  font-family: "roboto", "Arial", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  background-color: #f2f2f2;
+}
+*{
+  box-sizing: border-box;
+}
+.outline{
+  outline: 1px solid green;
+}
+.wrapper{
+  max-width: 1200px;
+  min-width: 900px;
+  margin: 0 auto;
+  padding: 9px 2.3% 0 2.3%;
+  background-color: #849d8f;
+}
+/*Хедер*/
+/*Скрытые элементы панели навигации*/
+.submenu-box,
+.search-hover,
+.login-hover{
+  display: none;
+}
+/*Стили навигационной панели*/
+header ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: inline-block;
+  vertical-align: top;
+}
+header li{
+  display: inline-block;
+  vertical-align: top;
+}
+header{
+  outline: 1px solid green;
+}
+.logo-image{
+  position: relative;
+  left:-6px;
+}
+.navigation-menu-item{
+  display: block;
+  padding: 21px 10px 32px 10px;
+  font-family: "roboto", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+}
+.text-dec{
+  display: block;
+  border-bottom: 1px solid #a0b5a9;
+  padding-bottom: 1px;
+}
+/*.header-navigation-menu{
+  width: 46.7%;
+  margin-right: 2.2%;
+}*/
+.header-user-box{
+  float: right;
+  padding: 14px 33px 20px 0;
+}
+/*Кнопки в хедере*/
+.user-box-search,
+.user-box-login,
+.user-box-bascket{
+  position: relative;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.user-box-search{
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+.user-box-login,
+.user-box-bascket{
+  width: 28px;
+  height: 32px;
+  margin-left: 42px;
+  font-family: "roboto", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 14px;
+  color: #fff;
+}
+.user-box-login::before,
+.user-box-login::after,
+.user-box-bascket::after,
+.user-box-bascket::before{
+  content: " ";
+  position:absolute;
+  top:0;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 32px;
+  height: 32px;
+}
+.user-box-login::before{
+  left:-32px;
+  border-top-left-radius:50%;
+  border-bottom-left-radius:50%;
+}
+.user-box-login::after{
+  right:-32px;
+  border-top-right-radius:50%;
+  border-bottom-right-radius:50%;
+}
+.user-box-bascket{
+  width: 53px;
+  margin-left: 63px;
+}
+.user-box-bascket::before{
+  left:-32px;
+  border-top-left-radius:50%;
+  border-bottom-left-radius:50%;
+}
+.user-box-bascket::after{
+  right:-32px;
+  border-top-right-radius:50%;
+  border-bottom-right-radius:50%;
+}
+/*окошко для спрайта*/
+.icon{
+  display:block;
+  position: relative;
+}
