@@ -4,7 +4,10 @@ html, body{
   font-family: "roboto", "Arial", sans-serif;
   font-size: 22px;
   line-height: 26px;
-  background-color: #f2f2f2;
+  background-color: #849d8f;
+}
+img{
+  max-width: 100%
 }
 *{
   box-sizing: border-box;
@@ -40,7 +43,7 @@ header li{
 }
 .logo-image{
   position: relative;
-  left:-6px;
+  left: -6px;
 }
 .navigation-menu-item{
   display: block;
@@ -91,40 +94,32 @@ header li{
 .user-box-bascket::after,
 .user-box-bascket::before{
   content: " ";
-  position:absolute;
-  top:0;
+  position: absolute;
+  top: 0;
   border: none;
   background-color: rgba(255, 255, 255, 0.2);
   width: 32px;
   height: 32px;
 }
-.user-box-login::before{
-  left:-32px;
-  border-top-left-radius:50%;
-  border-bottom-left-radius:50%;
+.user-box-login::before,
+.user-box-bascket::before{
+  left: -32px;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
 }
-.user-box-login::after{
-  right:-32px;
-  border-top-right-radius:50%;
-  border-bottom-right-radius:50%;
+.user-box-login::after,
+.user-box-bascket::after{
+  right: -32px;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
 }
 .user-box-bascket{
   width: 53px;
   margin-left: 73px;
 }
-.user-box-bascket::before{
-  left:-32px;
-  border-top-left-radius:50%;
-  border-bottom-left-radius:50%;
-}
-.user-box-bascket::after{
-  right:-32px;
-  border-top-right-radius:50%;
-  border-bottom-right-radius:50%;
-}
 /*окошко для спрайта*/
 .icon{
-  display:block;
+  display: block;
   position: relative;
 }
 .icon-entr::before{
