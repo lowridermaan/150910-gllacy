@@ -31,14 +31,14 @@ img{
   display: none;
 }
 /*Стили навигационной панели*/
-header ul{
+.header >ul{
   margin: 0;
-  padding: 0;
   list-style: none;
   display: inline-block;
   vertical-align: top;
 }
-header li{
+.header-navigation-menu >li,
+.header-user-box >li{
   display: inline-block;
   vertical-align: top;
 }
@@ -49,14 +49,16 @@ header li{
 .navigation-menu-item{
   display: block;
   position: relative;
-  margin-left: 15px;
-  margin-top: 12px;
   font-family: "roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   font-weight: bold;
   color: #ffffff;
   text-decoration: none;
+}
+.header-navigation-menu > li:not(:first-of-type){
+  margin-top: 12px;
+  margin-right: 20px;
 }
 .text-dec{
   position: relative;
@@ -199,3 +201,42 @@ header li{
 .user-box-bascket:hover .icon-cart::before{
   background: url(../img/cart.svg) no-repeat 0 2px;
 }
+/*Всплывающее подменю*/
+.submenu-box{
+  position: absolute;
+  display: none;
+  background-color: #f8f7f4;
+  border-radius: 7px;
+  margin-top: 5px;
+  overflow: hidden;
+}
+.submenu-box-inner{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "roboto", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+}
+.submenu-title{
+  font-weight: bold;
+   border-bottom: 1px solid #d1d0ce;
+   padding: 10px 0 10px 0;
+   margin: 0 10px 0 10px;
+}
+.submenu-item{
+  margin-bottom: 0;
+}
+.submenu-item > a{
+  display: block;
+  padding: 8px 15px 8px 15px;
+  text-decoration: none;
+  color: #323232;
+}
+.submenu-item > a:hover{
+  background-color: #fbded8;
+}
+li:hover .submenu-box{
+  display:block;
+}
+/*Карусель слайдер*/
