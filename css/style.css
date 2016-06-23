@@ -52,6 +52,8 @@ img{
 .navigation-menu-item{
   display: block;
   position: relative;
+}
+.navigation-menu-link{
   font-family: "roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
@@ -62,6 +64,9 @@ img{
 .header-navigation-menu > li:not(:first-of-type){
   margin-top: 12px;
   margin-right: 20px;
+}
+.header-navigation-menu > li:nth-child(2){
+  margin-left: 10px;
 }
 .text-dec{
   position: relative;
@@ -156,8 +161,10 @@ img{
 /*Кнопки меню*/
 .navigation-menu-item:hover{
   background: #f7f6f3;
-  color: #333333;
   padding-bottom: 7px;
+}
+.navigation-menu-item:hover .navigation-menu-link{
+  color: #333333;
 }
 .navigation-menu-item:hover .text-dec{
   border-color: #f7f6f3;
@@ -207,37 +214,39 @@ img{
 /*Всплывающее подменю*/
 .submenu-box{
   position: absolute;
+  left: -25%;
   display: none;
-  background-color: #f8f7f4;
-  border-radius: 7px;
-  margin-top: 5px;
-  overflow: hidden;
+  padding-top:15px;
+  width: 143px;
 }
 .submenu-box-inner{
   margin: 0;
   padding: 0;
+  border-radius: 7px;
+  background-color: #f8f7f4;
   list-style: none;
   font-family: "roboto", "Arial", sans-serif;
   font-size: 14px;
   line-height: 16px;
+  overflow: hidden;
 }
 .submenu-title{
-  font-weight: bold;
+   font-weight: bold;
    border-bottom: 1px solid #d1d0ce;
    padding: 10px 0 10px 0;
    margin: 0 10px 0 10px;
 }
-.submenu-item{
-  margin-bottom: 0;
-}
 .submenu-item > a{
   display: block;
-  padding: 8px 15px 8px 15px;
+  padding: 8px 20px 8px 10px;
   text-decoration: none;
   color: #323232;
 }
 .submenu-item > a:hover{
   background-color: #fbded8;
+}
+.submenu-item > a:active{
+  background-color: #f6b5a5;
 }
 li:hover .submenu-box{
   display:block;
