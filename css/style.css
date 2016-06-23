@@ -24,6 +24,9 @@ img{
   background-color: #849d8f;
 }
 /*Хедер*/
+.header{
+  position: relative;
+}
 /*Скрытые элементы панели навигации*/
 .submenu-box,
 .search-hover,
@@ -238,5 +241,26 @@ img{
 }
 li:hover .submenu-box{
   display:block;
+}
+/*Блок с инфой*/
+.header-info-box{
+  font-family: "roboto", "Arial", sans-serif;
+  color: #ffffff;
+  text-align: right;
+  position: absolute;
+  top: 55px;
+  right: 0;
+}
+.info-box-worktime{
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+.info-box-phone{
+  margin-top: 5px;
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: bold;
 }
 /*Карусель слайдер*/
