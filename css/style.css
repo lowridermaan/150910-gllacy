@@ -79,6 +79,7 @@ header li{
   outline: none;
   cursor: pointer;
   background-color: rgba(255, 255, 255, 0.2);
+  z-index: 1;
 }
 .user-box-search{
   width: 32px;
@@ -128,6 +129,7 @@ header li{
 .icon{
   display: block;
   position: relative;
+  z-index: 2;
 }
 .icon::before{
   content: "";
@@ -151,7 +153,9 @@ header li{
   background: #f7f6f3;
   color: #333333;
   padding-bottom: 7px;
-
+}
+.navigation-menu-item:hover .text-dec{
+  border-color: #f7f6f3;
 }
 .navigation-menu-item:active{
   box-shadow: inset 0 3px 4px -2px black;
@@ -179,4 +183,19 @@ header li{
 }
 .navigation-menu-item:active::after{
   box-shadow: inset -1px 3px 4px -2px black;
+}
+/*Кнопки user-box*/
+.user-box-login:hover,
+.user-box-bascket:hover{
+  color:#333333;
+  background: #f8f7f4;
+}
+.user-box-search:hover{
+  background: #f8f7f4 url(../img/sprite.png) no-repeat -25px 115%;
+}
+.user-box-login:hover .icon-entr::before{
+  background: url(../img/sprite.png) no-repeat -28px 2px;
+}
+.user-box-bascket:hover .icon-cart::before{
+  background: url(../img/sprite.png) no-repeat -28px -31px;
 }
