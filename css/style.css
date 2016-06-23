@@ -197,5 +197,5 @@ header li{
   background: url(../img/sprite.png) no-repeat -28px 2px;
 }
 .user-box-bascket:hover .icon-cart::before{
-  background: url(../img/sprite.png) no-repeat -28px -31px;
+  background: url(../img/cart.svg) no-repeat 0 2px;
 }
