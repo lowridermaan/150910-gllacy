@@ -48,18 +48,15 @@ img{
 .logo-image{
   position: relative;
   left: -6px;
-  margin-right: 10px;
+  margin-right: 5px;
 }
 .navigation-menu-item{
   position: relative;
-}
-.navigation-menu-item{
   margin-top: 12px;
-  margin-right: 20px;
 }
 .navigation-menu-link{
   display: block;
-  position: relative;
+  padding: 8px 13px 8px 13px;
   font-family: "roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
@@ -68,77 +65,51 @@ img{
   text-decoration: none;
 }
 .text-dec{
-  position: relative;
   display: block;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  padding-bottom: 1px;
-  padding-top: 6px;
-  z-index: 3;
 }
 .header-user-box{
   float: right;
-  padding: 14px 33px 20px 0;
+  padding: 10px 0 20px 0;
 }
 /*Кнопки в хедере*/
 .user-box-search,
 .user-box-login,
 .user-box-bascket{
-  position: relative;
   border: none;
   outline: none;
   cursor: pointer;
   background-color: rgba(255, 255, 255, 0.2);
-  z-index: 1;
 }
 .user-box-search{
   width: 32px;
   height: 32px;
+  margin-top: 2px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.2) url(../img/sprite.png) no-repeat -6% 115%;
 }
-.user-box-login,
-.user-box-bascket{
-  width: 28px;
-  height: 32px;
-  margin-left: 40px;
+.user-box-bascket,
+.user-box-login{
+  margin-left: 5px;
   font-family: "roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
-  color: #fff;
+  color: #ffffff;
 }
-.user-box-login::before,
-.user-box-login::after,
-.user-box-bascket::after,
-.user-box-bascket::before{
-  content: " ";
-  position: absolute;
-  top: 0;
-  border: none;
-  background-color: inherit;
-  width: 32px;
-  height: 32px;
-}
-.user-box-login::before,
-.user-box-bascket::before{
-  left: -32px;
-  border-top-left-radius: 50%;
-  border-bottom-left-radius: 50%;
-}
-.user-box-login::after,
-.user-box-bascket::after{
-  right: -32px;
-  border-top-right-radius: 50%;
-  border-bottom-right-radius: 50%;
+.user-box-login{
+  padding: 8px 20px 8px 35px;
+  border-radius: 100px;
 }
 .user-box-bascket{
-  width: 53px;
-  margin-left: 73px;
+  padding: 8px 30px 8px 35px;
+  border-radius: 100px
 }
 /*окошко для спрайта*/
 .icon{
   display: block;
   position: relative;
   z-index: 2;
+  margin-left: 5px;
 }
 .icon::before{
   content: "";
@@ -158,48 +129,18 @@ img{
 }
 /*Ховеры, нажатия и активные пункты*/
 /*Кнопки меню*/
-.navigation-menu-item:hover{
-  background: #f7f6f3;
+.navigation-menu-item:hover,
+.navigation-menu-link:hover{
+  background: #ffffff;
+  border-radius: 100px;
 }
-.navigation-menu-item:hover .navigation-menu-link{
-  padding-bottom: 7px;
-  color: #333333;
-}
+.navigation-menu-item:hover .text-dec,
 .navigation-menu-link:hover .text-dec{
-  border-color: #f7f6f3;
-}
-.navigation-menu-item:hover::before,
-.navigation-menu-link:hover::before,
-.navigation-menu-item:hover::after,
-.navigation-menu-link:hover::after{
- content: " ";
- position: absolute;
- width: 33px;
- height: 33px;
- background-color: inherit;
- z-index: 1;
-}
-.navigation-menu-item::before,
-.navigation-menu-link::before{
-  left:-15px;
-  border-radius: 50% 0 0 50%;
-}
-.navigation-menu-item::after,
-.navigation-menu-link::after{
-  top:0;
-  right: -15px;
-  border-radius: 0 50% 50% 0;
-  z-index: 1;
+  border: none;
+  color:#000000;
 }
 .navigation-menu-link:active{
-  box-shadow: inset 0 3px 4px -2px black;
-}
-.navigation-menu-link:active::before{
-  box-shadow: inset 1px 3px 4px -2px black;
-}
-.navigation-menu-link:active::after{
-  box-shadow: inset -1px 3px 4px -2px black;
-  z-index: 2;
+  box-shadow:inset 0px 2px 6px -1px #000000;
 }
 /*Кнопки user-box*/
 .user-box-login:hover,
@@ -219,7 +160,7 @@ img{
 /*Всплывающее подменю*/
 .submenu-box{
   position: absolute;
-  left: -17px;
+  left: -4px;
   display: none;
   padding-top:10px;
   width: 143px;
