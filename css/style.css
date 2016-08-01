@@ -208,10 +208,10 @@ img{
   text-decoration: none;
   color: #323232;
 }
-.submenu-item > a:hover{
+.submenu-item:hover{
   background-color: #fbded8;
 }
-.submenu-item > a:active{
+.submenu-item:active{
   background-color: #f6b5a5;
 }
 .navigation-menu-item:hover>.submenu-box{
